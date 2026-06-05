@@ -2,13 +2,14 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Modelo AR</title>
+  <title>Baranda AR</title>
 
   <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 
   <style>
     body {
       margin: 0;
+      overflow: hidden;
     }
 
     model-viewer {
@@ -25,10 +26,14 @@
   ar
   ar-modes="scene-viewer webxr"
   camera-controls
-  auto-rotate
-  shadow-intensity="1"
-  style="width:100vw;height:100vh;">
+  autoplay
+  shadow-intensity="1">
+
+  <button slot="ar-button">
+    Ver en AR
+  </button>
+
 </model-viewer>
-  
+
 </body>
 </html>
