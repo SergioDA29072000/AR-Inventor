@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Modelo AR</title>
+
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+  <style>
+    body {
+      margin: 0;
+    }
+
+    model-viewer {
+      width: 100vw;
+      height: 100vh;
+    }
+  </style>
+</head>
+
+<body>
+
+<model-viewer
+  src="Baranda%202000.glb"
+  ar
+  ar-modes="scene-viewer webxr"
+  camera-controls
+  auto-rotate>
+</model-viewer>
+
+</body>
+</html>
